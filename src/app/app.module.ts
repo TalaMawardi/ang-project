@@ -1,16 +1,25 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { FlexLayoutModule, FlexModule } from '@angular/flex-layout'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { from } from 'rxjs';
+import 'hammerjs';
 
-@NgModule({
+
+ @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    FlexLayoutModule,
+    MatToolbarModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
